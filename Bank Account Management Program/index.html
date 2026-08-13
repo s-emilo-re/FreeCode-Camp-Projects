@@ -1,0 +1,245 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bank Account Dashboard</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">₦</div>
+
+      <div>
+        <p class="eyebrow">PERSONAL BANKING</p>
+        <h1>My Account</h1>
+        <p class="subtitle">
+          Manage your balance and track your transactions.
+        </p>
+      </div>
+    </header>
+
+
+    <!-- Balance Card -->
+    <section class="balance-card">
+
+      <div class="balance-top">
+        <div>
+          <p>Available Balance</p>
+          <h2>$325.00</h2>
+        </div>
+
+        <div class="balance-icon">
+          $
+        </div>
+      </div>
+
+      <div class="balance-bottom">
+        <span>Account status</span>
+        <strong>
+          <span class="status-dot"></span>
+          Active
+        </strong>
+      </div>
+
+    </section>
+
+
+    <!-- Quick Actions -->
+    <section class="actions">
+
+      <button class="action-card">
+        <span class="action-icon deposit-icon">↓</span>
+
+        <span>
+          <strong>Deposit</strong>
+          <small>Add money</small>
+        </span>
+      </button>
+
+
+      <button class="action-card">
+        <span class="action-icon withdraw-icon">↑</span>
+
+        <span>
+          <strong>Withdraw</strong>
+          <small>Take money out</small>
+        </span>
+      </button>
+
+
+      <button class="action-card">
+        <span class="action-icon balance-icon-small">₦</span>
+
+        <span>
+          <strong>Balance</strong>
+          <small>Check balance</small>
+        </span>
+      </button>
+
+    </section>
+
+
+    <!-- Transactions -->
+    <section class="transactions-card">
+
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">ACTIVITY</p>
+          <h2>Recent Transactions</h2>
+        </div>
+
+        <span class="transaction-count">5 transactions</span>
+      </div>
+
+
+      <div class="transaction-list">
+
+        <!-- Transaction 1 -->
+        <article class="transaction">
+          <div class="transaction-info">
+
+            <div class="transaction-icon deposit">
+              ↓
+            </div>
+
+            <div>
+              <strong>Deposit</strong>
+              <small>Money added to account</small>
+            </div>
+          </div>
+
+          <span class="amount positive">
+            +$200.00
+          </span>
+        </article>
+
+
+        <!-- Transaction 2 -->
+        <article class="transaction">
+          <div class="transaction-info">
+
+            <div class="transaction-icon deposit">
+              ↓
+            </div>
+
+            <div>
+              <strong>Deposit</strong>
+              <small>Money added to account</small>
+            </div>
+          </div>
+
+          <span class="amount positive">
+            +$150.00
+          </span>
+        </article>
+
+
+        <!-- Transaction 3 -->
+        <article class="transaction">
+          <div class="transaction-info">
+
+            <div class="transaction-icon withdrawal">
+              ↑
+            </div>
+
+            <div>
+              <strong>Withdrawal</strong>
+              <small>Money withdrawn</small>
+            </div>
+          </div>
+
+          <span class="amount negative">
+            -$50.00
+          </span>
+        </article>
+
+
+        <!-- Transaction 4 -->
+        <article class="transaction">
+          <div class="transaction-info">
+
+            <div class="transaction-icon deposit">
+              ↓
+            </div>
+
+            <div>
+              <strong>Deposit</strong>
+              <small>Money added to account</small>
+            </div>
+          </div>
+
+          <span class="amount positive">
+            +$100.00
+          </span>
+        </article>
+
+
+        <!-- Transaction 5 -->
+        <article class="transaction">
+          <div class="transaction-info">
+
+            <div class="transaction-icon withdrawal">
+              ↑
+            </div>
+
+            <div>
+              <strong>Withdrawal</strong>
+              <small>Money withdrawn</small>
+            </div>
+          </div>
+
+          <span class="amount negative">
+            -$75.00
+          </span>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- Summary -->
+    <section class="summary">
+
+      <div class="summary-card">
+        <span class="summary-icon">↓</span>
+
+        <div>
+          <small>Total Deposits</small>
+          <strong>$450.00</strong>
+        </div>
+      </div>
+
+
+      <div class="summary-card">
+        <span class="summary-icon withdrawal-summary">↑</span>
+
+        <div>
+          <small>Total Withdrawals</small>
+          <strong>$125.00</strong>
+        </div>
+      </div>
+
+    </section>
+
+
+    <footer>
+      Built with <strong>JavaScript</strong> • Bank Account Class
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+```

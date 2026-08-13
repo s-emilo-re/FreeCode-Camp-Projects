@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+
+/* ==============================
+   RESET
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==============================
+   PAGE
+============================== */
+
+body {
+    min-height: 100vh;
+
+    font-family: "DM Sans", sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 24px;
+
+    color: #2f252b;
+
+    background:
+        radial-gradient(circle at top left,
+            #ffe1ed 0%,
+            transparent 35%),
+        radial-gradient(circle at bottom right,
+            #e9ddff 0%,
+            transparent 35%),
+        #fff9fc;
+}
+
+
+/* ==============================
+   MAIN CONTAINER
+============================== */
+
+.container {
+    width: 100%;
+    max-width: 470px;
+
+    padding: 35px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    border: 1px solid #f1dce6;
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 25px 60px rgba(105, 53, 76, 0.12);
+
+    backdrop-filter: blur(12px);
+
+    text-align: center;
+}
+
+
+/* ==============================
+   TITLE
+============================== */
+
+h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(28px, 6vw, 36px);
+
+    line-height: 1.2;
+
+    color: #34252d;
+
+    margin-bottom: 30px;
+}
+
+
+/* ==============================
+   AMOUNT INPUT
+============================== */
+
+input[type="number"] {
+    width: 100%;
+
+    padding: 16px 18px;
+
+    border: 1px solid #ead8e1;
+
+    border-radius: 15px;
+
+    background: #fff;
+
+    color: #33262d;
+
+    font-family: inherit;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+input[type="number"]::placeholder {
+    color: #b0a1a8;
+}
+
+
+input[type="number"]:focus {
+    border-color: #c56f96;
+
+    box-shadow:
+        0 0 0 4px rgba(197, 111, 150, 0.12);
+}
+
+
+/* Remove number input arrows */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    appearance: textfield;
+}
+
+
+/* ==============================
+   CURRENCY SELECTORS
+============================== */
+
+.selectors {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 20px 0;
+}
+
+
+select {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 14px 12px;
+
+    border: 1px solid #ead8e1;
+
+    border-radius: 14px;
+
+    background: #fff;
+
+    color: #3b2b33;
+
+    font-family: inherit;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+select:hover {
+    border-color: #d89ab5;
+}
+
+
+select:focus {
+    border-color: #c56f96;
+
+    box-shadow:
+        0 0 0 4px rgba(197, 111, 150, 0.1);
+}
+
+
+/* ==============================
+   ARROW
+============================== */
+
+.arrow {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #fff0f5;
+
+    color: #a83e69;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    box-shadow:
+        0 5px 15px rgba(168, 62, 105, 0.08);
+}
+
+
+/* ==============================
+   RESULT CARD
+============================== */
+
+.result-card {
+    margin-top: 10px;
+
+    padding: 25px 20px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(135deg,
+            #fff0f5,
+            #f9efff);
+
+    border: 1px solid #f0d9e5;
+}
+
+
+.result-card p {
+    color: #9c858f;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    margin-bottom: 8px;
+}
+
+
+.result-card h2 {
+    font-size: 30px;
+
+    color: #9d3e66;
+
+    letter-spacing: -0.5px;
+}
+
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 16px;
+    }
+
+
+    .container {
+        padding: 26px 20px;
+
+        border-radius: 22px;
+    }
+
+
+    h1 {
+        font-size: 28px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .selectors {
+        gap: 8px;
+    }
+
+
+    select {
+        font-size: 13px;
+
+        padding: 13px 8px;
+    }
+
+
+    .arrow {
+        width: 34px;
+        height: 34px;
+
+        font-size: 15px;
+    }
+
+
+    .result-card h2 {
+        font-size: 26px;
+    }
+
+}
+
+```
